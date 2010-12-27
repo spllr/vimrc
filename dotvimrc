@@ -1,9 +1,98 @@
+set nocompatible        " use vim defaults
+set ls=1                " allways show status line
+set tabstop=2           " numbers of spaces of tab character
+set shiftwidth=2        " numbers of spaces to (auto)indent
+set scrolloff=3         " keep 3 lines when scrolling
+set showcmd             " display incomplete commands
+set hlsearch            " highlight searches
+set incsearch           " do incremental searching
+set ruler               " show the cursor position all the time
+set nobackup            " do not keep a backup file
+set number             " show line numbers
+set ignorecase         " ignore case when searching 
+set noignorecase        " don't ignore case
+set title               " show title in console title bar
+set ttyfast             " smoother changes
+set modeline            " last lines in document sets vim mode
+set modelines=3         " number lines checked for modelines
+set shortmess=atI       " Abbreviate messages
+set nostartofline       " don't jump to first character when paging
+set sm                  " show matching braces
+set virtualedit=block   "By default, vim doesn't let the cursor stray beyond the defined text. This setting allows the cursor to freely roam anywhere it likes in command mode. It feels weird at first but is quite useful.
+set list "show invisibles
+
+" Tabs
+set tabstop=2 " Use 2 spaces for tabs
+set smarttab " Automatic indenting
+set shiftwidth=2 " sets spaces used for indention
+set autoindent " continue indention from previous line
+set expandtab " tab key inserts spaces instead of tabs
+set backspace=2 " start,indent
+
+" Do not use swapfiles or backup since writebackup is used
+" writebackup is still used, so a copy is always kept in memory
+set nobackup " Do not write backup files to disk
+set noswapfile " Do not use swapfiles (they have trouble with large files)
+
+set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**,.bundle,.rvmrc
+
+" additional support for some file types
+autocmd BufRead *.html.erb set ft=eruby.html
+autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " Pathogen
 filetype off 
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+
+set hidden              "Change buffer - without saving
+set magic               "magic regex
+
+"Auto indent
+set ai
+
+"Smart indet
+set si
+
+"C-style indeting
+set cindent
+
+set wildmenu
+set wildmode=longest:full
+
+" map control left and control right to swap the buffer
+map <C-right> <ESC>:bn<CR>
+map <C-left> <ESC>:bp<CR>
+
+
+"set autowrite          " auto saves changes when quitting and swiching buffer
+"set expandtab          " tabs are converted to spaces, use only when required
+"set nowrap             " don't wrap lines
+
+"Enable filetype plugin
+" filetype plugin on
+" filetype indent on
+
+
 " NerdTree
+map <leader>n :NERDTree<CR>
+" map <D-d> :execute 'NERDTreeToggle ' . getcwd()<CR>
+" navigates nerdtree to the current file
+map <leader><S-d> :NERDTree %:p:h<CR> 
 map <C-S-n> :NERDTreeToggle<CR>
+
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+if has("gui_running")
+  colorscheme desert
+else
+  colorscheme elflord
+  set background=dark
+end
+
+filetype plugin indent on
 
