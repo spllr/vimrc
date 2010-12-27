@@ -1,0 +1,30 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-cucumber"]
+	path = bundle/vim-cucumber
+	url = git://github.com/tpope/vim-cucumber.git
+[submodule "bundle/vim-haml"]
+	path = bundle/vim-haml
+	url = git://github.com/tpope/vim-haml.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-snipmate-ruby-snippets/snippets"]
+	path = bundle/vim-snipmate-ruby-snippets/snippets
+	url = https://github.com/kaichen/vim-snipmate-ruby-snippets.git
+[submodule "bundle/snipmate-snippets/snippets"]
+	path = bundle/snipmate-snippets/snippets
+	url = https://github.com/scrooloose/snipmate-snippets.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = https://github.com/taq/vim-rspec.git
