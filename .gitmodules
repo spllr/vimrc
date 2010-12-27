@@ -19,12 +19,6 @@
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/vim-snipmate-ruby-snippets/snippets"]
-	path = bundle/vim-snipmate-ruby-snippets/snippets
-	url = https://github.com/kaichen/vim-snipmate-ruby-snippets.git
-[submodule "bundle/snipmate-snippets/snippets"]
-	path = bundle/snipmate-snippets/snippets
-	url = https://github.com/scrooloose/snipmate-snippets.git
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/taq/vim-rspec.git
