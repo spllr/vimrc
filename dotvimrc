@@ -37,9 +37,13 @@ set noswapfile          " Do not use swapfiles (they have trouble with large fil
 set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**,.bundle,.rvmrc
 
 " folds
-set foldcolumn=2    " set 
+set foldcolumn=2    " set show fold colomn
 autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css,cucumber,haml,sass  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+" open fold
+map <C-DOWN> zo 
+" close fold
+map <C-UP> zc
 
 " Pathogen
 filetype off 
