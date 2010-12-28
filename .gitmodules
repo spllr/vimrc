@@ -25,3 +25,24 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/vim-endwise.git"]
+	path = bundle/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = https://github.com/tpope/vim-rake.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/tComment"]
+	path = bundle/tComment
+	url = https://github.com/vim-scripts/tComment.git

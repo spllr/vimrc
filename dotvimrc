@@ -8,8 +8,8 @@ set hlsearch            " highlight searches
 set incsearch           " do incremental searching
 set ruler               " show the cursor position all the time
 set nobackup            " do not keep a backup file
-set number             " show line numbers
-set ignorecase         " ignore case when searching 
+set number              " show line numbers
+set ignorecase          " ignore case when searching 
 set noignorecase        " don't ignore case
 set title               " show title in console title bar
 set ttyfast             " smoother changes
@@ -18,33 +18,37 @@ set modelines=3         " number lines checked for modelines
 set shortmess=atI       " Abbreviate messages
 set nostartofline       " don't jump to first character when paging
 set sm                  " show matching braces
-set virtualedit=block   "By default, vim doesn't let the cursor stray beyond the defined text. This setting allows the cursor to freely roam anywhere it likes in command mode. It feels weird at first but is quite useful.
-set list "show invisibles
+set virtualedit=block   " This setting allows the cursor to freely roam anywhere it likes in command mode.
+set list                " show invisibles
+set foldcolumn=1        " show t
 
 " Tabs
-set tabstop=2 " Use 2 spaces for tabs
-set smarttab " Automatic indenting
-set shiftwidth=2 " sets spaces used for indention
-set autoindent " continue indention from previous line
-set expandtab " tab key inserts spaces instead of tabs
-set backspace=2 " start,indent
+set tabstop=2           " Use 2 spaces for tabs
+set smarttab            " Automatic indenting
+set shiftwidth=2        " sets spaces used for indention
+set autoindent          " continue indention from previous line
+set expandtab           " tab key inserts spaces instead of tabs
+set backspace=2         " start,indent
 
-" Do not use swapfiles or backup since writebackup is used
-" writebackup is still used, so a copy is always kept in memory
-set nobackup " Do not write backup files to disk
-set noswapfile " Do not use swapfiles (they have trouble with large files)
+" Swapfiles
+set nobackup            " Do not write backup files to disk
+set noswapfile          " Do not use swapfiles (they have trouble with large files)
 
 set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**,.bundle,.rvmrc
 
-" additional support for some file types
-autocmd BufRead *.html.erb set ft=eruby.html
-autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+" folds
+set foldcolumn=2    " set 
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css,cucumber,haml,sass  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " Pathogen
 filetype off 
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" additional support for some file types
+autocmd BufRead *.html.erb set ft=eruby.html
+autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 set hidden              "Change buffer - without saving
 set magic               "magic regex
