@@ -46,3 +46,6 @@
 [submodule "bundle/tComment"]
 	path = bundle/tComment
 	url = https://github.com/vim-scripts/tComment.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
