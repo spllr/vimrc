@@ -98,6 +98,7 @@ set listchars=tab:▸\ ,eol:¬
 if has("gui_running")
   colorscheme desert
   set go=-m " hide toolbar
+  set guifont=Menlo\ Regular:h13
 else
   colorscheme elflord
   set background=dark
