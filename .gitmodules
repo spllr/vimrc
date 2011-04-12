@@ -52,3 +52,6 @@
 [submodule "bundle/vim-shoulda"]
 	path = bundle/vim-shoulda
 	url = https://github.com/tsaleh/vim-shoulda.git
+[submodule "bundle/vim-padrino"]
+	path = bundle/vim-padrino
+	url = git@github.com:spllr/vim-padrino.git
