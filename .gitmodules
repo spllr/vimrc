@@ -55,3 +55,6 @@
 [submodule "bundle/vim-padrino"]
 	path = bundle/vim-padrino
 	url = git@github.com:spllr/vim-padrino.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
